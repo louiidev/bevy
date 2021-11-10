@@ -174,6 +174,17 @@ where
         )
     }
 
+    pub fn contains<'w, 's>(&'s self, world: &'w World, entity: Entity) -> bool {
+        let location = world.entities.get(entity);
+
+        if let Some(location) = location {
+            return self
+                .matched_archetypes
+                .contains(location.archetype_id.index());
+        }
+        false
+    }
+
     /// Gets the query result for the given [`World`] and [`Entity`], where the last change and
     /// the current change tick are given.
     ///

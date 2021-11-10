@@ -583,6 +583,31 @@ mod tests {
     }
 
     #[test]
+    fn query_contains_entity() {
+        fn without_entity(entity: Res<Entity>, empty: Query<&A>) {
+            assert!(!empty.contains(*entity));
+        }
+
+        fn with_entity(entity: Res<Entity>, not_empty: Query<&A>) {
+            assert!(not_empty.contains(*entity));
+        }
+        let mut world = World::default();
+        let entity = world.spawn().insert(B).id();
+        world.insert_resource(entity);
+
+        let mut without_entity = without_entity.system();
+        without_entity.initialize(&mut world);
+        without_entity.run((), &mut world);
+
+        let entity = world.spawn().insert(A).id();
+        world.insert_resource(entity);
+
+        let mut with_entity = with_entity.system();
+        with_entity.initialize(&mut world);
+        with_entity.run((), &mut world);
+    }
+
+    #[test]
     #[allow(clippy::too_many_arguments)]
     fn can_have_16_parameters() {
         fn sys_x(

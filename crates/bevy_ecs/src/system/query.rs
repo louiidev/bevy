@@ -275,6 +275,10 @@ where
         }
     }
 
+    pub fn contains(&self, entity: Entity) -> bool {
+        self.state.contains(self.world, entity)
+    }
+
     /// Returns an [`Iterator`] over the query results.
     ///
     /// This can only be called for read-only queries (due to the [`ReadOnlyFetch`] trait
