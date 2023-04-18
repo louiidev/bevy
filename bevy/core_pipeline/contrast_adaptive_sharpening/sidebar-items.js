@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"struct":[["CASNode",""],["CASPipeline",""],["CASPipelineKey",""],["CASPlugin","Adds Support for Contrast Adaptive Sharpening (CAS)."],["ContrastAdaptiveSharpeningSettings","Applies a contrast adaptive sharpening (CAS) filter to the camera."],["DenoiseCAS",""],["ViewCASPipeline",""]]};

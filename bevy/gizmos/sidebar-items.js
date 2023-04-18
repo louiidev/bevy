@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"mod":[["gizmos","A module for the `Gizmos` `SystemParam`."],["prelude","The `bevy_gizmos` prelude."]],"struct":[["GizmoConfig","A [`Resource`] that stores configuration for gizmos."],["GizmoPlugin","A [`Plugin`] that provides an immediate mode drawing api for visual debugging."]]};

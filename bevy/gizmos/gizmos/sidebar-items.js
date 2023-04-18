@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"struct":[["Circle2dBuilder","A builder returned by [`Gizmos::circle_2d`]."],["CircleBuilder","A builder returned by [`Gizmos::circle`]."],["Gizmos","A `SystemParam` for drawing gizmos."],["SphereBuilder","A builder returned by [`Gizmos::sphere`]."]]};

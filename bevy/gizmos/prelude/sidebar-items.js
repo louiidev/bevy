@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"struct":[["GizmoConfig","A [`Resource`] that stores configuration for gizmos."],["Gizmos","A `SystemParam` for drawing gizmos."]]};

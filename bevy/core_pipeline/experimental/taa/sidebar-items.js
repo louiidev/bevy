@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"struct":[["TemporalAntiAliasBundle","Bundle to apply temporal anti-aliasing."],["TemporalAntiAliasPlugin","Plugin for temporal anti-aliasing. Disables multisample anti-aliasing (MSAA)."],["TemporalAntiAliasSettings","Component to apply temporal anti-aliasing to a 3D perspective camera."]]};

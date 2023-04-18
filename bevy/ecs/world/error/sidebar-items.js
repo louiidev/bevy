@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"struct":[["TryRunScheduleError","The error type returned by `World::try_run_schedule` if the provided schedule does not exist."]]};
